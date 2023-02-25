@@ -9,7 +9,7 @@ const QrCodeScanner = (props) => {
   const videoConstraints = {
     width: width,
     height: height,
-    facingMode: 'user',
+    facingMode: { exact: 'environment' },
   };
 
   const [result, setResult] = useState('');
